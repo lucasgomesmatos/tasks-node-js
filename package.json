@@ -1,0 +1,13 @@
+{
+  "name": "to-do-list-node",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
