@@ -1,6 +1,7 @@
 import http from 'http';
-import { json } from './middlewares/json';
-import { routes } from './routes/routes';
+import { json } from './middlewares/json.js';
+import { routes } from './routes/routes.js';
+import { extractQueryParams } from './utils/extract-query-params.js';
 
 const server = http.createServer(async (req, res) => {
   const { url, method } = req;
@@ -22,7 +23,6 @@ const server = http.createServer(async (req, res) => {
   }
 
   res.writeHead(404).end();
-
 });
 
 server.listen(3000, () => {
